@@ -6,6 +6,9 @@ const postsReducer = (state = [], action) => {
     case "FETCH_POST": {
       return [ action.payload ]; // action.payload is an object ("{}") so need to convert into an array ("[]")
     }
+    case "FETCH_POST": {
+      return [ action.payload ];
+    }
     default:
       return state; // state is "[]" if undefined
   }

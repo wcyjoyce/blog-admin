@@ -20,3 +20,18 @@ export function fetchPost(id) {
     payload: promise
   }
 }
+
+export function createPost(body, callback) {
+  const url = `${ROOT_URL}?key=${API_KEY}`;
+  const promise = fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  }).then(response => response.json())
+    .then(callback);
+
+  return {
+    type: "CREATE_POST",
+    payload: promise
+  }
+}

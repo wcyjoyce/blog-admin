@@ -9,6 +9,9 @@ const postsReducer = (state = [], action) => {
     case "FETCH_POST": {
       return [ action.payload ];
     }
+    case "CREATE_POST": {
+      // callback handles the action, no need to return anything in reducer
+    }
     default:
       return state; // state is "[]" if undefined
   }

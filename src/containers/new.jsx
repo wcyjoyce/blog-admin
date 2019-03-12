@@ -45,8 +45,7 @@ class New extends Component {
             component="textarea"
             rows="8"
         />
-          <button className="btn btn-primary" type="submit"
-        disabled={this.props.pristine || this.props.submitting}>
+          <button className="btn btn-primary" type="submit" disabled={this.props.pristine || this.props.submitting}>
             Create Post
           </button>
         </form>

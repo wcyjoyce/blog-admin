@@ -28,9 +28,7 @@ class Posts extends Component {
       <div>
         <div className="first-row">
           <h3>Blog</h3>
-          <Link className="btn btn-primary btn-cta" to="/posts/new">
-            Let's write a post!
-          </Link>
+          <Link className="btn btn-primary btn-cta" to="/posts/new">Create Post</Link>
         </div>
         {this.renderPosts()}
       </div>

@@ -11,16 +11,6 @@ export function fetchPosts() {
   }
 }
 
-export function fetchPost(id) {
-  const url = `${ROOT_URL}/${id}?key=${API_KEY}`;
-  const promise = fetch(url).then(response => response.json());
-
-  return {
-    type: "FETCH_POST",
-    payload: promise
-  }
-}
-
 export function createPost(body, callback) {
   const url = `${ROOT_URL}?key=${API_KEY}`;
   const promise = fetch(url, {
@@ -32,6 +22,16 @@ export function createPost(body, callback) {
 
   return {
     type: "CREATE_POST",
+    payload: promise
+  }
+}
+
+export function fetchPost(id) {
+  const url = `${ROOT_URL}/${id}?key=${API_KEY}`;
+  const promise = fetch(url).then(response => response.json());
+
+  return {
+    type: "FETCH_POST",
     payload: promise
   }
 }

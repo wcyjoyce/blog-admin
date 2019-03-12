@@ -11,8 +11,8 @@ import { reducer as formReducer } from "redux-form";
 import "../assets/stylesheets/application.scss";
 
 import Posts from "./containers/posts.jsx";
-import Show from "./containers/show.jsx";
 import New from "./containers/new.jsx";
+import Show from "./containers/show.jsx";
 
 import postsReducer from "./reducers/posts_reducer.js";
 

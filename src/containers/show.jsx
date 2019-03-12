@@ -37,8 +37,7 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps(state, ownProps) { // ownProps enable render for specific post
   const id = parseInt(ownProps.match.params.id, 10); // "10" is the base for "parseInt" function
-  const post = state.posts.find(post => post.id === id);
-  return { post };
+  return { post: state.posts.find(post => post.id === id) };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Show);

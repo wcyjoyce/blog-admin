@@ -1,11 +1,5 @@
-# redux-boilerplate
+# Blog Admin
 
-Simple React + Redux starter with the following config:
+This is a simple blogging platform that I created with React Router as part of [Le Wagon's](http://www.lewagon.com) React and Redux course. Supported by a [REST API](http://reduxblog.herokuapp.com/), users can create and view blog posts.
 
-- React, ReactDOM
-- Redux, React-Redux
-- Webpack 3
-- Babel with es2015 and react presets
-- Bootstrap (css only, loaded from a cdn in `index.html`)
-- work with `.js` or `.jsx` files
-- main `application.scss` stylesheet is imported in `index.js` as a module to enjoy hot reloading
+This is my first React Router app! 
